@@ -4,9 +4,9 @@ import { Link as RouterLink } from "react-router-dom"; // Importa Link si deseas
 const NotFoundPage = () => {
   return (
     <div className="flex justify-center items-center text-center -mt-16 h-screen">
-      <div className="text-center m-10">
+      <div className="text-center m-5">
         <svg
-          className="h-[200px] w-[200px] animate-bounce mx-auto sm:h-[150px] sm:w-[150px]"
+          className="h-[180px] w-[180px] animate-bounce mx-auto sm:h-[150px] sm:w-[150px]"
           enableBackground="new 0 0 226 249.135"
           height="249.135"
           id="Layer_1"
