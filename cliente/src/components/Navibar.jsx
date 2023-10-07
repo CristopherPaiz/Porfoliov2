@@ -19,8 +19,11 @@ const Navibar = () => {
     <Navbar isBordered maxWidth="full">
       <NavbarContent>
         <NavbarBrand>
-          <p className=" font-black text-left text-4xl ">
-            <RouterLink to={"/"} className="oscuro dark:claro">
+          <p>
+            <RouterLink
+              to={"/"}
+              className={`font-black text-left text-4xl  ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               CRP
             </RouterLink>
           </p>
@@ -64,21 +67,30 @@ const Navibar = () => {
         )}
         <NavbarItem isActive>
           <Button className="bg-transparent hover:bg-neutral-100 dark:hover:bg-slate-100">
-            <RouterLink to={"/"} className="py-2 -mx-3 px-3 flex gap-1 font-bold oscuro dark:claro">
+            <RouterLink
+              to={"/"}
+              className={`py-2 -mx-3 px-3 flex gap-1 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               Inicio
             </RouterLink>
           </Button>
         </NavbarItem>
         <NavbarItem>
           <Button className="bg-transparent hover:bg-success-100" variant="flat">
-            <RouterLink to={"/about"} className="py-2 -mx-3 px-3 flex gap-1 font-bold oscuro dark:claro">
+            <RouterLink
+              to={"/about"}
+              className={`py-2 -mx-3 px-3 flex gap-1 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               ¿Quién soy?
             </RouterLink>
           </Button>
         </NavbarItem>
         <NavbarItem>
           <Button className="bg-transparent hover:bg-purple-100">
-            <RouterLink to={"/contact"} className="py-2 -mx-3 px-3 flex gap-1 font-bold oscuro dark:claro">
+            <RouterLink
+              to={"/contact"}
+              className={`py-2 -mx-3 px-3 flex gap-1 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               Contacto
             </RouterLink>
           </Button>
@@ -103,17 +115,26 @@ const Navibar = () => {
         </DropdownTrigger>
         <DropdownMenu aria-label="Menu Actions" variant="flat" className="font-bold">
           <DropdownItem key="comunidad">
-            <Link to={"/"} className="pr-28 pl-3 flex gap-2 font-bold">
+            <Link
+              to={"/"}
+              className={`pr-28 pl-3 flex gap-2 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               Inicio
             </Link>
           </DropdownItem>
           <DropdownItem key="farmacia">
-            <Link to={"/about"} className="pr-28 pl-3 flex gap-2 font-bold">
+            <Link
+              to={"/about"}
+              className={`pr-28 pl-3 flex gap-2 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               ¿Quién soy?
             </Link>
           </DropdownItem>
           <DropdownItem key="social">
-            <Link to={"/contact"} className="pr-28 pl-3 flex gap-2 font-bold">
+            <Link
+              to={"/contact"}
+              className={`pr-28 pl-3 flex gap-2 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
+            >
               Contacto
             </Link>
           </DropdownItem>
