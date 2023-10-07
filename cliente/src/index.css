@@ -31,3 +31,27 @@
   -moz-text-fill-color: transparent;
   background-attachment: fixed;
 }
+
+.lineClaro {
+  background: linear-gradient(
+    90deg,
+    rgba(25, 25, 25, 0) 5%,
+    rgba(244, 208, 63, 1) 50%,
+    rgba(25, 25, 25, 0) 95%
+  );
+  width: 100vw;
+  height: 2px;
+  filter: drop-shadow(0 5px 5px #ffd323);
+}
+
+.lineOscuro {
+  background: linear-gradient(
+    90deg,
+    rgba(25, 25, 25, 0) 5%,
+    rgba(155, 124, 0, 1) 50%,
+    rgba(25, 25, 25, 0) 95%
+  );
+  width: 100vw;
+  height: 2px;
+  filter: drop-shadow(0 10px 10px #4d2b00);
+}
