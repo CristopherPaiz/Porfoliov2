@@ -187,7 +187,7 @@ const Navibar = () => {
           </DropdownMenu>
         </Dropdown>
       </Navbar>
-      <div className={`${theme === "dark" ? "lineClaro" : "lineOscuro"}`}></div>
+      <div className={`fixed ${theme === "dark" ? "lineClaro" : "lineOscuro"}`}></div>
     </>
   );
 };

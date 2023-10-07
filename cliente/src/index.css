@@ -53,5 +53,5 @@
   );
   width: 100vw;
   height: 2px;
-  filter: drop-shadow(0 10px 10px #4d2b00);
+  filter: drop-shadow(0 10px 10px #000000);
 }
