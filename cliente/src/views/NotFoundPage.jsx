@@ -89,7 +89,7 @@ const NotFoundPage = () => {
           <circle cx="113" cy="113" fill="none" r="109" stroke="#6E6E96" strokeWidth="8" />
         </svg>
         <div className="mt-4">
-          <span className="block text-6xl opacity-60 font-semibold mr-2 text-[#0075bf]">
+          <span className="block text-6xl opacity-60 font-semibold mr-2 text-[#0075bf] dark:text-[#f0ffae]">
             <span>4 0 4</span>
           </span>
           <span className="text-2xl">¡Lo sentimos, la página que estás buscando no existe!</span>
@@ -97,7 +97,7 @@ const NotFoundPage = () => {
         <div className="mt-12">
           <RouterLink
             to={"/"}
-            className="bg-[#0075bf] text-white px-5 py-3 rounded-2xl hover:bg-[#0075bf]/[0.7]"
+            className="bg-[#0075bf] text-white px-5 py-3 rounded-2xl hover:bg-[#0075bf]/[0.7] dark:text-black dark:bg-[#e1ff5a] dark:hover:bg-[#f0ffae]"
           >
             Regresar al inicio
           </RouterLink>

@@ -23,7 +23,7 @@ const Navibar = () => {
             <p>
               <RouterLink
                 to={"/"}
-                className={`font-black text-left text-5xl  ${theme === "dark" ? "claro" : "oscuro"}`}
+                className={`font-black text-left text-4xl  ${theme === "dark" ? "claro" : "oscuro"}`}
               >
                 CRP
               </RouterLink>
