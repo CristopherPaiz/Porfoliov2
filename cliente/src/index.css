@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 .claro {
-  padding: 3px;
+  /* padding: 3px; */
   background-image: linear-gradient(
     180deg,
     rgba(247, 255, 128, 1) 15%,
-    rgba(161, 213, 255, 1) 55%,
-    rgba(255, 178, 220, 1) 100%
+    rgb(111, 126, 255) 80%,
+    rgb(0, 0, 0) 100%
   );
+  background-size: cover;
   background-clip: text;
   box-decoration-break: slice;
   -webkit-background-clip: text;
@@ -20,8 +21,9 @@
   background-attachment: fixed;
 }
 .oscuro {
-  padding: 3px;
+  /* padding: 3px; */
   background: linear-gradient(180deg, rgba(137, 137, 0, 1) 30%, rgba(0, 0, 0, 1) 100%);
+  background-size: cover;
   background-clip: text;
   box-decoration-break: slice;
   -webkit-background-clip: text;
@@ -33,6 +35,7 @@
 }
 
 .lineClaro {
+  background-color: #f4d03f;
   background: linear-gradient(
     90deg,
     rgba(25, 25, 25, 0) 5%,
@@ -45,6 +48,7 @@
 }
 
 .lineOscuro {
+  background-color: #f4d03f;
   background: linear-gradient(
     90deg,
     rgba(25, 25, 25, 0) 5%,
@@ -54,4 +58,30 @@
   width: 100vw;
   height: 2px;
   filter: drop-shadow(0 10px 10px #000000);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(25, 25, 25);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f4d03f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5af7d7;
+}
+
+::-moz-selection {
+  color: snow;
+  background: rgba(244, 208, 63, 0.3);
+}
+
+::selection {
+  color: snow;
+  background: rgba(244, 208, 63, 0.3);
 }
