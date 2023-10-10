@@ -1,8 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { contexto } from "../context/ContextProvider.jsx";
-import { Button } from "@nextui-org/react";
-import Perfil from "/profile.webp";
-import CV from "/Cristopher_Paiz_CV.pdf";
+
 
 const Skills = () => {
   const { theme } = useContext(contexto);

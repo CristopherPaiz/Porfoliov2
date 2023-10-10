@@ -77,7 +77,7 @@ const Timeline = () => {
       >
         Educación
       </h1>
-      <div className="my-12 mx-10">
+      <div className="my-6 mx-10">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           {estudios.map((estudio, index) => (
             <li key={index} className="mb-10 ml-6">
@@ -92,7 +92,7 @@ const Timeline = () => {
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                 </svg>
               </span>
-              <h3 className="flex items-center mb-1 text-lg font-black">
+              <h3 className="flex items-center text-lg font-black">
                 <span className={`${theme === "dark" ? "claro" : "oscuro"}`}>
                   {estudio?.titulo ?? "Título no disponible actualmente"}
                 </span>
@@ -103,7 +103,7 @@ const Timeline = () => {
                 )}
               </h3>
               <time
-                className={`flex flex-row gap-x-2 mt-3 mb-4 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500 ${
+                className={`flex flex-row gap-x-2 mt-3 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
                 }`}
               >
@@ -114,7 +114,7 @@ const Timeline = () => {
                 {estudio?.lugar ?? "Lugar no disponible actualmente"}
               </time>
               <time className="flex-col">
-                <div className="flex flex-row gap-x-2 mb-3 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500">
+                <div className="flex flex-row gap-x-2 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500">
                   <svg viewBox="0 0 448 512" fill="currentColor" height="1em" width="1em">
                     <path d="M152 64h144V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40h40c35.3 0 64 28.65 64 64v320c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h40V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40zM48 248h80v-56H48v56zm0 48v64h80v-64H48zm128 0v64h96v-64h-96zm144 0v64h80v-64h-80zm80-104h-80v56h80v-56zm0 216h-80v56h64c8.8 0 16-7.2 16-16v-40zm-128 0h-96v56h96v-56zm-144 0H48v40c0 8.8 7.16 16 16 16h64v-56zm144-216h-96v56h96v-56z" />
                   </svg>
@@ -134,7 +134,7 @@ const Timeline = () => {
                 )}
               </time>
               <time
-                className={`flex flex-row gap-x-2 mb-4 text-lg font-normal leading-snug capitalize text-gray-400 dark:text-gray-500 ${
+                className={`flex flex-row gap-x-2 text-lg font-normal leading-snug capitalize text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
                 }`}
               >
@@ -154,7 +154,7 @@ const Timeline = () => {
       >
         Certificados, cursos
       </h1>
-      <div className="my-12 mx-10">
+      <div className="my-6 mx-10">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           {cursos.map((estudio, index) => (
             <li key={index} className="mb-10 ml-6">
@@ -169,7 +169,7 @@ const Timeline = () => {
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                 </svg>
               </span>
-              <h3 className="flex items-center mb-1 text-lg font-black">
+              <h3 className="flex items-center text-lg font-black">
                 <span className={`${theme === "dark" ? "claro" : "oscuro"}`}>
                   {estudio?.titulo ?? "Título no disponible actualmente"}
                 </span>
@@ -180,7 +180,7 @@ const Timeline = () => {
                 )}
               </h3>
               <time
-                className={`flex flex-row gap-x-2 mt-3 mb-4 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500 ${
+                className={`flex flex-row gap-x-2 mt-3 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
                 }`}
               >
@@ -191,7 +191,7 @@ const Timeline = () => {
                 {estudio?.lugar ?? "Lugar no disponible actualmente"}
               </time>
               <time className="flex-col">
-                <div className="flex flex-row gap-x-2 mb-3 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500">
+                <div className="flex flex-row gap-x-2 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500">
                   <svg viewBox="0 0 448 512" fill="currentColor" height="1em" width="1em">
                     <path d="M152 64h144V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40h40c35.3 0 64 28.65 64 64v320c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h40V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40zM48 248h80v-56H48v56zm0 48v64h80v-64H48zm128 0v64h96v-64h-96zm144 0v64h80v-64h-80zm80-104h-80v56h80v-56zm0 216h-80v56h64c8.8 0 16-7.2 16-16v-40zm-128 0h-96v56h96v-56zm-144 0H48v40c0 8.8 7.16 16 16 16h64v-56zm144-216h-96v56h96v-56z" />
                   </svg>
