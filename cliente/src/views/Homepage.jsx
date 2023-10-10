@@ -1,4 +1,5 @@
 import AboutMe from "../components/AboutMe.jsx";
+import Skills from "../components/Skills.jsx";
 import Timeline from "../components/Timeline.jsx";
 import Title from "../components/Title.jsx";
 
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Title />
       <AboutMe />
       <Timeline />
+      <Skills />
     </>
   );
 };
