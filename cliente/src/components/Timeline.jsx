@@ -69,9 +69,9 @@ const Timeline = () => {
   };
 
   return (
-    <div className="sm:mx-32 mb-32">
+    <div className="sm:mx-32 mb-12 shadow-lg dark:shadow-2xl px-4 py-0 rounded-3xl">
       <h1
-        className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-65l font-black sm:mt-32 ${
+        className={`pt-24 text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-65l font-black sm:mt-32 ${
           theme === "dark" ? "claro" : "oscuro"
         }`}
       >
@@ -81,7 +81,7 @@ const Timeline = () => {
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           {estudios.map((estudio, index) => (
             <li key={index} className="mb-10 ml-6">
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-neutral-100 dark:ring-gray-600 dark:bg-blue-900">
                 <svg
                   className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
                   aria-hidden="true"
@@ -154,11 +154,11 @@ const Timeline = () => {
       >
         Certificados, cursos
       </h1>
-      <div className="my-6 mx-10">
+      <div className="my-6 mx-10 pb-12">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           {cursos.map((estudio, index) => (
             <li key={index} className="mb-10 ml-6">
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-neutral-100 dark:ring-gray-600 dark:bg-blue-900">
                 <svg
                   className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
                   aria-hidden="true"

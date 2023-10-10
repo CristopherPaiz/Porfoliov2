@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { contexto } from "../context/ContextProvider.jsx";
 
-
 const Skills = () => {
   const { theme } = useContext(contexto);
 
@@ -114,7 +113,7 @@ const Skills = () => {
   return (
     <div className="sm:mx-32 mb-32">
       <h1
-        className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-65l font-black sm:mt-32 ${
+        className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-65l font-black sm:mt-24 ${
           theme === "dark" ? "claro" : "oscuro"
         }`}
       >
@@ -124,7 +123,7 @@ const Skills = () => {
         {tecnologias.map((tecnologia, index) => (
           <div
             key={index}
-            className="flex flex-col items-center py-4 px-1 sm:w-44 w-5/12 rounded-xl shadow-xl border-2"
+            className="flex flex-col items-center py-4 px-1 sm:w-44 w-5/12 rounded-xl shadow-xl cursor-default border-2 dark:hover:shadow-[#919191] dark:hover:shadow-sm hover:shadow-sm hover:shadow-[#919191] duration-200 ease-out"
             style={{
               borderColor: theme === "dark" ? tecnologia.color + "20" : tecnologia.color + "30",
               backgroundColor: theme === "dark" ? tecnologia.color + "50" : tecnologia.color + "20",
