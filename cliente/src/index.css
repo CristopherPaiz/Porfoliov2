@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.divclaro {
+  background-image: linear-gradient(180deg, rgb(209, 222, 32, 0.5) 15%, rgb(111, 126, 255, 0.5) 100%);
+  background-attachment: fixed;
+}
+
+.divoscuro {
+  background-image: linear-gradient(180deg, rgb(211, 211, 36, 0.5) 30%, rgb(39, 40, 0, 0.1) 100%);
+  background-attachment: fixed;
+}
+
 .claro {
   padding-bottom: 7px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(247, 255, 128, 1) 15%,
-    rgb(111, 126, 255) 80%,
-    rgb(0, 0, 0) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(247, 255, 128, 1) 15%, rgb(111, 126, 255) 80%, rgb(0, 0, 0) 100%);
   background-size: cover;
   background-clip: text;
   box-decoration-break: slice;
@@ -36,12 +41,7 @@
 
 .lineClaro {
   background-color: #f4d03f;
-  background: linear-gradient(
-    90deg,
-    rgba(25, 25, 25, 0) 5%,
-    rgba(244, 208, 63, 1) 50%,
-    rgba(25, 25, 25, 0) 95%
-  );
+  background: linear-gradient(90deg, rgba(25, 25, 25, 0) 5%, rgba(244, 208, 63, 1) 50%, rgba(25, 25, 25, 0) 95%);
   width: 100vw;
   height: 2px;
   z-index: 1000;
@@ -50,12 +50,7 @@
 
 .lineOscuro {
   background-color: #f4d03f;
-  background: linear-gradient(
-    90deg,
-    rgba(25, 25, 25, 0) 5%,
-    rgba(155, 124, 0, 1) 50%,
-    rgba(25, 25, 25, 0) 95%
-  );
+  background: linear-gradient(90deg, rgba(25, 25, 25, 0) 5%, rgba(155, 124, 0, 1) 50%, rgba(25, 25, 25, 0) 95%);
   width: 100vw;
   height: 2px;
   z-index: 1000;

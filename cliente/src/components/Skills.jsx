@@ -130,7 +130,7 @@ const Skills = () => {
       >
         Habilidades
       </h1>
-      <div className="relative flex flex-row flex-wrap sm:gap-x-2 gap-y-6 mx-6 mt-6 justify-between">
+      <div className="relative flex flex-row flex-wrap sm:gap-x-2 gap-y-6 mx-6 mt-6 justify-evenly">
         {tecnologias.map((tecnologia, index) => (
           <div
             key={index}
