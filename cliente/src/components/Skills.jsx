@@ -103,8 +103,7 @@ const Skills = () => {
     },
     {
       nombre: "Office",
-      imgurl:
-        "https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg",
+      imgurl: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg",
       stars: "★★★★★",
       color: "#ec3c04",
     },
@@ -123,7 +122,7 @@ const Skills = () => {
         {tecnologias.map((tecnologia, index) => (
           <div
             key={index}
-            className="flex flex-col items-center py-4 px-1 sm:w-44 w-5/12 rounded-xl shadow-xl cursor-default border-2 dark:hover:shadow-[#919191] dark:hover:shadow-sm hover:shadow-sm hover:shadow-[#919191] duration-200 ease-out"
+            className="flex flex-col items-center py-4 px-1 sm:w-44 w-5/12 rounded-xl shadow-xl cursor-default border-2 dark:hover:shadow-[#6e6e6e] dark:hover:shadow-lg hover:shadow-xl hover:shadow-[#acacac] duration-100 ease-linear"
             style={{
               borderColor: theme === "dark" ? tecnologia.color + "20" : tecnologia.color + "30",
               backgroundColor: theme === "dark" ? tecnologia.color + "50" : tecnologia.color + "20",
@@ -133,9 +132,7 @@ const Skills = () => {
             <p className={`text-center font-black text-lg sm:text-xl`} style={{ color: tecnologia.color }}>
               {tecnologia.nombre}
             </p>
-            <p
-              className={`text-center font-thin text-lg sm:text-xl ${theme === "dark" ? "claro" : "oscuro"}`}
-            >
+            <p className={`text-center font-thin text-lg sm:text-xl ${theme === "dark" ? "claro" : "oscuro"}`}>
               {tecnologia.stars}
             </p>
           </div>
