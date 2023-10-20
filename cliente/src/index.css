@@ -2,19 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-bg-claro: rgb(209, 222, 32, 0.5); /* div claro primary */
+  --color-bg-claroSec: rgb(111, 126, 255, 0.5); /* div claro secondary */
+
+  --color-bg-oscuro: rgb(211, 211, 36, 0.5); /* div oscuro */
+  --color-bg-oscuroSec: rgb(39, 40, 0, 0.1); /* div oscuro */
+
+  --color-text-claro: rgba(247, 255, 128, 1); /* text claro primary */
+  --color-text-claroSec: rgba(111, 126, 255, 1); /* text claro secondary */
+  --color-text-claroTer: rgba(0, 0, 0, 1); /* text claro tertiary*/
+
+  --color-text-oscuro: rgba(137, 137, 0, 1); /* text oscuro primary */
+  --color-text-oscuroSec: rgba(0, 0, 0, 1); /* text oscuro secondary */
+  --color-text-oscuroTer: rgba(0, 0, 0, 1); /* text oscuro tertiary*/
+
+  --color-line: #f4d03f; /* linea */
+  --color-lineOscuro: #000000; /* linea oscuro*/
+
+  /* Los menos importantes */
+  --color-scrollbar-bg: rgb(25, 25, 25);
+  --color-scrollbar-thumb: #f4d03f;
+  --color-scrollbar-thumb-hover: #5af7d7;
+  --color-selection-text: snow;
+  --color-selection-bg: rgba(244, 208, 63, 0.3);
+}
+
 .divclaro {
-  background-image: linear-gradient(180deg, rgb(209, 222, 32, 0.5) 15%, rgb(111, 126, 255, 0.5) 100%);
+  background-image: linear-gradient(180deg, var(--color-bg-claro) 15%, var(--color-bg-claroSec) 100%);
   background-attachment: fixed;
 }
 
 .divoscuro {
-  background-image: linear-gradient(180deg, rgb(211, 211, 36, 0.5) 30%, rgb(39, 40, 0, 0.1) 100%);
+  background-image: linear-gradient(180deg, var(--color-bg-oscuro) 30%, var(--color-bg-oscuroSec) 100%);
   background-attachment: fixed;
 }
 
 .claro {
   padding-bottom: 7px;
-  background-image: linear-gradient(180deg, rgba(247, 255, 128, 1) 15%, rgb(111, 126, 255) 80%, rgb(0, 0, 0) 100%);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-text-claro) 15%,
+    var(--color-text-claroSec) 80%,
+    var(--color-text-claroTer) 100%
+  );
   background-size: cover;
   background-clip: text;
   box-decoration-break: slice;
@@ -25,9 +56,15 @@
   -moz-text-fill-color: transparent;
   background-attachment: fixed;
 }
+
 .oscuro {
   padding-bottom: 7px;
-  background: linear-gradient(180deg, rgba(137, 137, 0, 1) 30%, rgba(0, 0, 0, 1) 100%);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-text-oscuro) 15%,
+    var(--color-text-oscuroSec) 80%,
+    var(--color-text-oscuroTer) 100%
+  );
   background-size: cover;
   background-clip: text;
   box-decoration-break: slice;
@@ -40,8 +77,8 @@
 }
 
 .lineClaro {
-  background-color: #f4d03f;
-  background: linear-gradient(90deg, rgba(25, 25, 25, 0) 5%, rgba(244, 208, 63, 1) 50%, rgba(25, 25, 25, 0) 95%);
+  background-color: var(--color-line);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 5%, var(--color-line) 50%, rgba(0, 0, 0, 0) 95%);
   width: 100vw;
   height: 2px;
   z-index: 1000;
@@ -49,8 +86,8 @@
 }
 
 .lineOscuro {
-  background-color: #f4d03f;
-  background: linear-gradient(90deg, rgba(25, 25, 25, 0) 5%, rgba(155, 124, 0, 1) 50%, rgba(25, 25, 25, 0) 95%);
+  background-color: var(--color-lineOscuro);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 5%, var(--color-lineOscuro) 50%, rgba(0, 0, 0, 0) 95%);
   width: 100vw;
   height: 2px;
   z-index: 1000;
@@ -62,23 +99,23 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(25, 25, 25);
+  background: var(--color-scrollbar-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f4d03f;
+  background: var(--color-scrollbar-thumb);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5af7d7;
+  background: var(--color-scrollbar-thumb-hover);
 }
 
 ::-moz-selection {
-  color: snow;
-  background: rgba(244, 208, 63, 0.3);
+  color: var(--color-selection-text);
+  background: var(--color-selection-bg);
 }
 
 ::selection {
-  color: snow;
-  background: rgba(244, 208, 63, 0.3);
+  color: var(--color-selection-text);
+  background: var(--color-selection-bg);
 }
