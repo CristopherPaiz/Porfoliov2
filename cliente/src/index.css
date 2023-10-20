@@ -5,9 +5,11 @@
 :root {
   --color-bg-claro: rgb(209, 222, 32, 0.5); /* div claro primary */
   --color-bg-claroSec: rgb(111, 126, 255, 0.5); /* div claro secondary */
+  --color-bg-claroTer: rgb(111, 126, 255, 0.5); /* div claro tertiary */
 
   --color-bg-oscuro: rgb(211, 211, 36, 0.5); /* div oscuro */
   --color-bg-oscuroSec: rgb(39, 40, 0, 0.1); /* div oscuro */
+  --color-bg-oscuroTer: rgb(39, 40, 0, 0.1); /* div tertiary */
 
   --color-text-claro: rgba(247, 255, 128, 1); /* text claro primary */
   --color-text-claroSec: rgba(111, 126, 255, 1); /* text claro secondary */
@@ -29,12 +31,22 @@
 }
 
 .divclaro {
-  background-image: linear-gradient(180deg, var(--color-bg-claro) 15%, var(--color-bg-claroSec) 100%);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-bg-claro) 15%,
+    var(--color-bg-claroSec) 80%,
+    var(--color-bg-claroTer) 100%
+  );
   background-attachment: fixed;
 }
 
 .divoscuro {
-  background-image: linear-gradient(180deg, var(--color-bg-oscuro) 30%, var(--color-bg-oscuroSec) 100%);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-text-oscuro) 15%,
+    var(--color-text-oscuroSec) 80%,
+    var(--color-text-oscuroTer) 100%
+  );
   background-attachment: fixed;
 }
 
