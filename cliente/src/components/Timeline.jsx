@@ -119,9 +119,7 @@ const Timeline = () => {
                     <path d="M152 64h144V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40h40c35.3 0 64 28.65 64 64v320c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h40V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40zM48 248h80v-56H48v56zm0 48v64h80v-64H48zm128 0v64h96v-64h-96zm144 0v64h80v-64h-80zm80-104h-80v56h80v-56zm0 216h-80v56h64c8.8 0 16-7.2 16-16v-40zm-128 0h-96v56h96v-56zm-144 0H48v40c0 8.8 7.16 16 16 16h64v-56zm144-216h-96v56h96v-56z" />
                   </svg>
                   <div className={`capitalize ${theme === "dark" ? "claro" : "oscuro"}`}>
-                    {`${formatearFecha(estudio?.inicio ?? new Date())} - ${formatearFecha(
-                      estudio?.fin ?? new Date()
-                    )}`}
+                    {`${formatearFecha(estudio?.inicio ?? new Date())} - ${formatearFecha(estudio?.fin ?? new Date())}`}
                   </div>
                 </div>
                 {estudio?.estado === false && (
@@ -196,9 +194,7 @@ const Timeline = () => {
                     <path d="M152 64h144V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40h40c35.3 0 64 28.65 64 64v320c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h40V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40zM48 248h80v-56H48v56zm0 48v64h80v-64H48zm128 0v64h96v-64h-96zm144 0v64h80v-64h-80zm80-104h-80v56h80v-56zm0 216h-80v56h64c8.8 0 16-7.2 16-16v-40zm-128 0h-96v56h96v-56zm-144 0H48v40c0 8.8 7.16 16 16 16h64v-56zm144-216h-96v56h96v-56z" />
                   </svg>
                   <div className={`capitalize ${theme === "dark" ? "claro" : "oscuro"}`}>
-                    {`${formatearFecha(estudio?.inicio ?? new Date())} - ${formatearFecha(
-                      estudio?.fin ?? new Date()
-                    )}`}
+                    {`${formatearFecha(estudio?.inicio ?? new Date())} - ${formatearFecha(estudio?.fin ?? new Date())}`}
                   </div>
                 </div>
 
@@ -223,10 +219,10 @@ const Timeline = () => {
               </time>
               <a
                 href={estudio.url}
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-[#e2e2e2] border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-[#474747] dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                 target="_blank"
               >
-                <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" className="-mt-1">
                   <path d="M10.5 8a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />
                 </svg>

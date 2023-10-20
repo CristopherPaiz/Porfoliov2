@@ -33,7 +33,7 @@ const AboutMe = () => {
             aplicar mis habiidades y conocimientos para contribuir al éxito de una empresa.
           </h3>
           <div className="w-full text-center mt-5">
-            <Button color="warning" variant="ghost" className="sm:w-[300px]">
+            <Button color="warning" variant="ghost" className="sm:-ml-10 sm:w-[250px]">
               <a href={CV} className="fontbutton" target="_blank">
                 &darr; ᠎᠎᠎᠎│ DESCARGAR CV
               </a>
