@@ -48,6 +48,18 @@ const Skills = () => {
       color: "#7c14fc",
     },
     {
+      nombre: "Node JS",
+      imgurl: "https://cdn.svgporn.com/logos/nodejs.svg",
+      stars: "★★★★☆",
+      color: "#81b38b",
+    },
+    {
+      nombre: "Github",
+      imgurl: "https://cdn.svgporn.com/logos/github-icon.svg",
+      stars: "★★★★★",
+      color: "#8c8c8c",
+    },
+    {
       nombre: "Python",
       imgurl: "https://cdn.svgporn.com/logos/python.svg",
       stars: "★★★☆☆",
@@ -118,7 +130,7 @@ const Skills = () => {
       >
         Habilidades
       </h1>
-      <div className="relative flex flex-row flex-wrap sm:gap-4 gap-y-5 mx-6 mt-6 justify-evenly">
+      <div className="relative flex flex-row flex-wrap sm:gap-x-2 gap-y-6 mx-6 mt-6 justify-between">
         {tecnologias.map((tecnologia, index) => (
           <div
             key={index}
