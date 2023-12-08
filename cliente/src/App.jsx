@@ -4,7 +4,7 @@ import ContextProvider from "./context/ContextProvider.jsx";
 
 import Homepage from "./views/Homepage";
 import NotFoundPage from "./views/NotFoundPage";
-import Navibar from "./components/Navibar";
+import Navibar from "./components/Navibar"; //hola
 
 const App = () => {
   return (
