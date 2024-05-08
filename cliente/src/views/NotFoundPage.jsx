@@ -1,4 +1,3 @@
-import React from "react";
 import { Link as RouterLink } from "react-router-dom"; // Importa Link si deseas usarlo para la navegación
 
 const NotFoundPage = () => {

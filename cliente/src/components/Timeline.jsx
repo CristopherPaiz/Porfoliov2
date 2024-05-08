@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { contexto } from "../context/ContextProvider.jsx";
 import Intecap from "/Diploma_INTECAP_Cristopher_Paiz.pdf";
 import Microcontroladores from "/Diploma_Microcontroladores_Cristopher_Paiz.pdf";
@@ -88,7 +88,8 @@ const Timeline = () => {
       <h1
         className={`pt-24 text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-65l font-black sm:mt-32 ${
           theme === "dark" ? "claro" : "oscuro"
-        }`}>
+        }`}
+      >
         Educación
       </h1>
       <div className="my-6 mx-10">
@@ -101,7 +102,8 @@ const Timeline = () => {
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                 </svg>
               </span>
@@ -132,7 +134,8 @@ const Timeline = () => {
               <time
                 className={`flex flex-row gap-x-2 mt-3 sm:text-lg font-normal leading-snug text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
-                }`}>
+                }`}
+              >
                 <svg viewBox="0 0 512 512" fill="currentColor" height="1.2em" width="1.2em">
                   <path d="M256 370.43L96 279v98.42l160 88.88 160-88.88V279l-160 91.43z" />
                   <path d="M512.25 192L256 45.57-.25 192 256 338.43l208-118.86V384h48V192.14l.25-.14z" />
@@ -160,7 +163,8 @@ const Timeline = () => {
               <time
                 className={`flex flex-row gap-x-2 sm:text-lg font-normal leading-snug capitalize text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
-                }`}>
+                }`}
+              >
                 <svg viewBox="0 0 384 512" fill="currentColor" height="1em" width="1em">
                   <path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64z" />
                 </svg>
@@ -173,7 +177,8 @@ const Timeline = () => {
       <h1
         className={`text-5xl text-center mt-12 sm:text-left sm:mx-5 sm:text-5xl font-black sm:mt-12 ${
           theme === "dark" ? "claro" : "oscuro"
-        }`}>
+        }`}
+      >
         Certificados, cursos
       </h1>
       <div className="my-6 mx-10 pb-12">
@@ -186,7 +191,8 @@ const Timeline = () => {
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                 </svg>
               </span>
@@ -203,7 +209,8 @@ const Timeline = () => {
               <time
                 className={`flex flex-row gap-x-2 mt-3 text-lg font-normal leading-snug text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
-                }`}>
+                }`}
+              >
                 <svg viewBox="0 0 512 512" fill="currentColor" height="1em" width="1em">
                   <path d="M256 370.43L96 279v98.42l160 88.88 160-88.88V279l-160 91.43z" />
                   <path d="M512.25 192L256 45.57-.25 192 256 338.43l208-118.86V384h48V192.14l.25-.14z" />
@@ -232,7 +239,8 @@ const Timeline = () => {
               <time
                 className={`flex flex-row gap-x-2 mb-4 text-lg font-normal leading-snug capitalize text-gray-400 dark:text-gray-500 ${
                   theme === "dark" ? "claro" : "oscuro"
-                }`}>
+                }`}
+              >
                 <svg viewBox="0 0 384 512" fill="currentColor" height="1em" width="1em">
                   <path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64z" />
                 </svg>
@@ -241,7 +249,9 @@ const Timeline = () => {
               <a
                 href={estudio.url}
                 className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-[#e2e2e2] border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-[#474747] dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" className="-mt-1">
                   <path d="M10.5 8a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />

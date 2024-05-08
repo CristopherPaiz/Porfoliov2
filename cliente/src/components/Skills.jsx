@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { contexto } from "../context/ContextProvider.jsx";
 
 const Skills = () => {
@@ -36,6 +36,12 @@ const Skills = () => {
       color: "#44bb84",
     },
     {
+      nomber: "Java",
+      imgurl: "https://cdn.svgporn.com/logos/java.svg",
+      stars: "★★★★☆",
+      color: "#f7c53d",
+    },
+    {
       nombre: "Tailwind CSS",
       imgurl: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
       stars: "★★★★★",
@@ -54,6 +60,12 @@ const Skills = () => {
       color: "#81b38b",
     },
     {
+      nombre: "Spring Boot",
+      imgurl: "https://cdn.svgporn.com/logos/spring-icon.svg",
+      stars: "★★★★☆",
+      color: "#6cb33f",
+    },
+    {
       nombre: "Github",
       imgurl: "https://cdn.svgporn.com/logos/github-icon.svg",
       stars: "★★★★★",
@@ -62,7 +74,7 @@ const Skills = () => {
     {
       nombre: "Python",
       imgurl: "https://cdn.svgporn.com/logos/python.svg",
-      stars: "★★★☆☆",
+      stars: "★★★★☆",
       color: "#3473a5",
     },
     {
@@ -76,6 +88,12 @@ const Skills = () => {
       imgurl: "https://cdn.svgporn.com/logos/mongodb-icon.svg",
       stars: "★★★★★",
       color: "#04ec64",
+    },
+    {
+      nombre: "Oracle DB",
+      imgurl: "https://cdn.svgporn.com/logos/oracle.svg",
+      stars: "★★★☆☆",
+      color: "#f80000",
     },
     {
       nombre: "Redux",

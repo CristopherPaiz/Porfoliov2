@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { contexto } from "../context/ContextProvider.jsx";
 import { Button } from "@nextui-org/react";
 import Perfil from "/profile.webp";
@@ -23,19 +23,19 @@ const AboutMe = () => {
         />
         <div className="flex-col m-auto">
           <h3 className={`font-bold text-justify mx-10 mt-10 sm:text-left ${theme === "dark" ? "claro" : "oscuro"}`}>
-            Me llamo Cristopher Paiz y soy de Quetzaltenango, Guatemala. Soy un desarrollador junior con una pasión por
-            la tecnología y el aprendizaje constante. Mi objetivo es utilizar mis habilidades técnicas para resolver
-            problemas y ayudar a las personas a alcanzar sus metas.
+            Llámame Cristopher o <k>Choper</k>, como te sientas en confianza, soy de Quetzaltenango, Guatemala.
+            Desarrollador con una pasión por la tecnología y el aprendizaje constante. Mi objetivo es utilizar mis
+            habilidades técnicas para resolver problemas y ayudar a las personas a alcanzar sus metas.
             <br />
             <br />
             Estoy siempre buscando nuevas oportunidades para aprender y crecer en mi carrera, en mi tiempo libre,
             disfruto participar en proyectos personales y colaborar en proyectos de código abierto. Estoy emocionado de
-            aplicar mis habiidades y conocimientos para contribuir al éxito de una empresa.
+            aplicar mis habiidades y conocimientos para contribuir al éxito de ti o de quien necesite de mi apoyo.
           </h3>
           <div className="w-full text-center mt-5">
             <Button color="warning" variant="ghost" className="sm:-ml-10 sm:w-[250px]">
-              <a href={CV} className="fontbutton" target="_blank">
-                &darr; ᠎᠎᠎᠎│ DESCARGAR CV
+              <a href={CV} className="fontbutton" target="_blank" rel="noreferrer">
+                &darr;&nbsp;|&nbsp;DESCARGAR CV
               </a>
             </Button>
           </div>
