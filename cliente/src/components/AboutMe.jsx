@@ -22,7 +22,11 @@ const AboutMe = () => {
           className="mx-auto w-52 h-52 rounded-full sm:w-64 sm:h-64 sm:mt-10 sm:rounded-none sm:ml-6"
         />
         <div className="flex-col m-auto">
-          <h3 className={`font-bold text-pretty mx-10 mt-10 sm:text-left ${theme === "dark" ? "claro" : "oscuro"}`}>
+          <h3
+            className={`font-semibold sm:font-bold text-pretty mx-10 mt-10 sm:text-left ${
+              theme === "dark" ? "claro" : "oscuro"
+            }`}
+          >
             Llámame Cristopher o <i>Choper</i>, como te sientas en confianza, soy de Quetzaltenango, Guatemala.
             Desarrollador con una pasión por la tecnología y el aprendizaje constante. Mi objetivo es utilizar mis
             habilidades técnicas para resolver problemas y ayudar a las personas a alcanzar sus metas.
