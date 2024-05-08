@@ -168,12 +168,12 @@ const Projects = () => {
           <div
             key={index}
             className={`relative sm:w-5/12 rounded-2xl sm:rounded-3xl ${
-              theme === "dark" ? "divclaro" : "divoscuro"
-            } dark:bg-opacity-30 px-5 pt-7 pb-5 w-11/12`}
+              theme === "dark" ? "divoscuroBorder" : "divclaroBorder"
+            } dark:bg-opacity-50 px-5 pt-7 pb-5 w-11/12 drop-shadow-lg dark:boder-2 dark:border-white`}
           >
-            <img src={project.img} className="object-cover rounded-sm sm:rounded-lg" />
+            <img src={project.img} className="object-cover rounded-lg sm:rounded-lg" />
             <div className="flex flex-col gap-2 sm:mb-3">
-              <h2 className="text-xl sm:text-2xl font-bold text-center my-3 text-[#46541a] dark:text-white">
+              <h2 className="text-xl sm:text-2xl font-bold text-center my-3 text-black dark:text-white">
                 {project.name}
               </h2>
               <div className="text-center sm:text-lg flex flex-wrap flex-row w-full gap-y-2 gap-x-1 justify-center">

@@ -15,9 +15,17 @@
   --color-text-claroSec: rgba(111, 126, 255, 1); /* text claro secondary */
   --color-text-claroTer: rgba(0, 0, 0, 1); /* text claro tertiary*/
 
-  --color-text-oscuro: rgba(137, 137, 0, 1); /* text oscuro primary */
-  --color-text-oscuroSec: rgba(0, 0, 0, 1); /* text oscuro secondary */
-  --color-text-oscuroTer: rgba(0, 0, 0, 1); /* text oscuro tertiary*/
+  --color-text-oscuro: rgb(202, 202, 0); /* text oscuro primary */
+  --color-text-oscuroSec: rgb(134, 154, 255); /* text oscuro secondary */
+  --color-text-oscuroTer: rgb(204, 205, 255); /* text oscuro tertiary*/
+
+  --color-bord-oscuro: rgb(75, 75, 0); /* text oscuro primary */
+  --color-bord-oscuroSec: rgb(0, 21, 57); /* text oscuro secondary */
+  --color-bord-oscuroTer: rgb(0, 20, 47); /* text oscuro tertiary*/
+
+  --color-bord-claro: rgb(255, 255, 133); /* text claro primary */
+  --color-bord-claroSec: rgb(169, 201, 255); /* text claro secondary */
+  --color-bord-claroTer: rgb(152, 197, 255); /* text oscuro tertiary*/
 
   --color-line: #f4d03f; /* linea */
   --color-lineOscuro: #000000; /* linea oscuro*/
@@ -46,6 +54,26 @@
     var(--color-text-oscuro) 15%,
     var(--color-text-oscuroSec) 80%,
     var(--color-text-oscuroTer) 100%
+  );
+  background-attachment: fixed;
+}
+
+.divclaroBorder {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-bord-claro) 15%,
+    var(--color-bord-claroSec) 80%,
+    var(--color-bord-claroTer) 100%
+  );
+  background-attachment: fixed;
+}
+
+.divoscuroBorder {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-bord-oscuro) 15%,
+    var(--color-bord-oscuroSec) 80%,
+    var(--color-bord-oscuroTer) 100%
   );
   background-attachment: fixed;
 }
