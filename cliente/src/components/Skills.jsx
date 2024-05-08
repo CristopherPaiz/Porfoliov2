@@ -36,7 +36,7 @@ const Skills = () => {
       color: "#44bb84",
     },
     {
-      nomber: "Java",
+      nombre: "Java",
       imgurl: "https://cdn.svgporn.com/logos/java.svg",
       stars: "★★★★☆",
       color: "#f7c53d",

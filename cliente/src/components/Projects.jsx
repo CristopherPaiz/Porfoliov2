@@ -5,6 +5,11 @@ import Pokedex from "/pokedex.webp";
 import Clima from "/clima.webp";
 import Comunidad from "/comunidad.webp";
 import Intecap from "/intecap.webp";
+import musicPlayer from "/musicPlayer.webp";
+import biblian from "/biblian.webp";
+import backgrounds from "/backgrounds.webp";
+import paycut from "/paycut.webp";
+import lz77 from "/lz77.webp";
 
 const Projects = () => {
   const { theme } = useContext(contexto);
@@ -82,6 +87,18 @@ const Projects = () => {
       showrepo: false,
     },
     {
+      name: "Paycut - Credit Card Pay & Cut Calendar",
+      tech: [
+        { nombre: "HTML", color: colores.html },
+        { nombre: "CSS", color: colores.css },
+        { nombre: "Javascript", color: colores.javascript },
+      ],
+      img: paycut,
+      link: "https://paycut.netlify.app/",
+      git: "https://github.com/CristopherPaiz/pago-corte-tarjetas",
+      showrepo: true,
+    },
+    {
       name: "Scheduler App",
       tech: [
         { nombre: "React JS", color: colores.react },
@@ -108,18 +125,6 @@ const Projects = () => {
       img: backgrounds,
       link: "https://html-backgrounds.netlify.app/",
       git: "https://github.com/CristopherPaiz/backgrounds_HTML_REACT",
-      showrepo: true,
-    },
-    {
-      name: "Paycut - Credit Card Pay & Cut Calendar",
-      tech: [
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Javascript", color: colores.javascript },
-      ],
-      img: paycut,
-      link: "https://paycut.netlify.app/",
-      git: "https://github.com/CristopherPaiz/pago-corte-tarjetas",
       showrepo: true,
     },
     {
