@@ -38,7 +38,7 @@ const Skills = () => {
     {
       nombre: "Java",
       imgurl: "https://cdn.svgporn.com/logos/java.svg",
-      stars: "★★★★☆",
+      stars: "★★★☆☆",
       color: "#f7c53d",
     },
     {
@@ -62,7 +62,7 @@ const Skills = () => {
     {
       nombre: "Spring Boot",
       imgurl: "https://cdn.svgporn.com/logos/spring-icon.svg",
-      stars: "★★★★☆",
+      stars: "★★★☆☆",
       color: "#6cb33f",
     },
     {

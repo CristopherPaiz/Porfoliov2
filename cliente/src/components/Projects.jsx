@@ -15,19 +15,35 @@ const Projects = () => {
   const { theme } = useContext(contexto);
 
   const colores = {
-    react: "rgba(4, 220, 252, 0.9)",
-    html: "rgba(232, 83, 38, 1)",
-    css: "rgba(38, 82, 232, 0.8)",
-    javascript: "rgba(232, 232, 38, 1)",
-    tailwind: "rgba(24, 184, 187, 1)",
-    nextui: "rgba(238, 238, 238, 0.4)",
+    react: "rgba(88, 231, 253, 0.9)",
+    html: "rgb(255, 99, 51)",
+    css: "rgba(88, 141, 249, 0.8)",
+    javascript: "rgb(255, 255, 0)",
+    tailwind: "rgb(68, 245, 248)",
+    nextui: "rgba(238, 238, 238, 1)",
     MongoDB: "rgba(4, 236, 100, 0.8)",
     NodeJS: "rgba(129, 179, 139, 1)",
     Express: "rgba(68, 187, 132, 1)",
 
-    PokeApi: "rgba(238, 238, 238, 0.4)",
-    OpenWeatherAPI: "rgba(238, 238, 238, 0.4)",
-    UnsplashAPI: "rgba(238, 238, 238, 0.4)",
+    PokeApi: "rgba(238, 238, 238, 1)",
+    OpenWeatherAPI: "rgba(238, 238, 238, 1)",
+    UnsplashAPI: "rgba(238, 238, 238, 1)",
+  };
+
+  const coloresText = {
+    react: "rgba(0,0,0,1)",
+    html: "rgba(255,255,255,1)",
+    css: "rgba(255,255,255,1)",
+    javascript: "rgba(0,0,0,1)",
+    tailwind: "rgba(0,0,0,1)",
+    nextui: "rgba(0,0,0,1)",
+    MongoDB: "rgba(0,0,0,1)",
+    NodeJS: "rgba(255,255,255,1)",
+    Express: "rgba(255,255,255,1)",
+
+    PokeApi: "rgba(0,0,0,1)",
+    OpenWeatherAPI: "rgba(0,0,0,1)",
+    UnsplashAPI: "rgba(0,0,0,1)",
   };
 
   const projects = [
@@ -36,10 +52,10 @@ const Projects = () => {
       description:
         "Pokédex con todos los pokémones, con la posibilidad de buscar por nombre o número y ver sus detalles específicos.",
       tech: [
-        { nombre: "React JS", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "PokeAPI", color: colores.PokeApi },
+        { nombre: "React JS", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "PokeAPI", color: colores.PokeApi, textColor: coloresText.PokeApi },
       ],
       img: Pokedex,
       link: "https://pokedex-crp.netlify.app/",
@@ -51,10 +67,10 @@ const Projects = () => {
       description:
         "Un reproductor de música que permite reproducir canciones de forma muy rápida gracias a algoritmos de segmentación, funcionando en conexiones de red lentas.",
       tech: [
-        { nombre: "React JS", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Tailwind CSS", color: colores.tailwind },
+        { nombre: "React JS", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Tailwind CSS", color: colores.tailwind, textColor: coloresText.tailwind },
       ],
       img: musicPlayer,
       link: "https://music-crp.netlify.app/",
@@ -66,10 +82,10 @@ const Projects = () => {
       description:
         "Una aplicación donde se muestran más de 100 versiones de biblias, con la posibilidad de comparar versículos entre ellas.",
       tech: [
-        { nombre: "React JS", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Tailwind CSS", color: colores.tailwind },
+        { nombre: "React JS", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Tailwind CSS", color: colores.tailwind, textColor: coloresText.tailwind },
       ],
       img: biblian,
       link: "https://biblian.netlify.app/",
@@ -81,13 +97,13 @@ const Projects = () => {
       description:
         "Aplicación completa para la gestión de una comunidad religiosa, con control de usuarios, roles y permisos, como parte de proyecto de graduación de la Universidad Mariano Gálvez de Guatemala.",
       tech: [
-        { nombre: "React JS", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Tailwind CSS", color: colores.tailwind },
-        { nombre: "NextUI", color: colores.nextui },
-        { nombre: "MongoDB", color: colores.MongoDB },
-        { nombre: "Express", color: colores.Express },
+        { nombre: "React JS", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Tailwind CSS", color: colores.tailwind, textColor: coloresText.tailwind },
+        { nombre: "NextUI", color: colores.nextui, textColor: coloresText.nextui },
+        { nombre: "MongoDB", color: colores.MongoDB, textColor: coloresText.MongoDB },
+        { nombre: "Express", color: colores.Express, textColor: coloresText.Express },
       ],
       img: Comunidad,
       link: "https://csfa.es",
@@ -98,9 +114,9 @@ const Projects = () => {
       name: "Paycut - Credit Card Pay & Cut Calendar",
       description: "Aplicación que te permite ver visualmente los rangos de pago y corte de tus tarjetas de crédito.",
       tech: [
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Javascript", color: colores.javascript },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Javascript", color: colores.javascript, textColor: coloresText.javascript },
       ],
       img: paycut,
       link: "https://paycut.netlify.app/",
@@ -112,13 +128,13 @@ const Projects = () => {
       description:
         "Aplicación que te permite asignar horarios a los docentes de INTECAP para sus clases y actividades, evitando colisiones entre horarios, fechas, docentes y aulas.",
       tech: [
-        { nombre: "React JS", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Tailwind CSS", color: colores.tailwind },
-        { nombre: "NextUI", color: colores.nextui },
-        { nombre: "MongoDB", color: colores.MongoDB },
-        { nombre: "Express", color: colores.Express },
+        { nombre: "React JS", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Tailwind CSS", color: colores.tailwind, textColor: coloresText.tailwind },
+        { nombre: "NextUI", color: colores.nextui, textColor: coloresText.nextui },
+        { nombre: "MongoDB", color: colores.MongoDB, textColor: coloresText.MongoDB },
+        { nombre: "Express", color: colores.Express, textColor: coloresText.Express },
       ],
       img: Intecap,
       link: "https://intecapscheduler.netlify.app/",
@@ -129,10 +145,10 @@ const Projects = () => {
       name: "Backgrounds HTML & React",
       description: "Simple aplicación que te permite copiar y pegar fondos personalizados para tu proyecto web.",
       tech: [
-        { nombre: "React", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Tailwind", color: colores.tailwind },
+        { nombre: "React", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Tailwind", color: colores.tailwind, textColor: coloresText.tailwind },
       ],
       img: backgrounds,
       link: "https://html-backgrounds.netlify.app/",
@@ -144,9 +160,9 @@ const Projects = () => {
       description:
         "Algoritmo de compresión de texto LZ77, que permite comprimir y descomprimir texto de forma eficiente, sin pérdida de información.",
       tech: [
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "Javascript", color: colores.javascript },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "Javascript", color: colores.javascript, textColor: coloresText.javascript },
       ],
       img: lz77,
       link: "https://lz77.netlify.app/",
@@ -158,10 +174,10 @@ const Projects = () => {
       description:
         "Aplicación que te permite ver el clima de cualquier ciudad del mundo, utilizando la API de OpenWeather.",
       tech: [
-        { nombre: "React JS", color: colores.react },
-        { nombre: "HTML", color: colores.html },
-        { nombre: "CSS", color: colores.css },
-        { nombre: "OpenWeatherAPI", color: colores.OpenWeatherAPI },
+        { nombre: "React JS", color: colores.react, textColor: coloresText.react },
+        { nombre: "HTML", color: colores.html, textColor: coloresText.html },
+        { nombre: "CSS", color: colores.css, textColor: coloresText.css },
+        { nombre: "OpenWeatherAPI", color: colores.OpenWeatherAPI, textColor: coloresText.OpenWeatherAPI },
       ],
       img: Clima,
       link: "https://clima-crp.netlify.app/",
@@ -197,8 +213,8 @@ const Projects = () => {
                 {project.tech.map((techs, index) => (
                   <div
                     key={index}
-                    className={"px-3 py-1  text-[12px] sm:text-[14px] rounded-full"}
-                    style={{ backgroundColor: techs.color }}
+                    className={"w-[110px] px-2 py-1 text-[12px] sm:text-[14px] rounded-full"}
+                    style={{ backgroundColor: techs.color, color: techs.textColor }}
                   >
                     {techs.nombre}
                   </div>
