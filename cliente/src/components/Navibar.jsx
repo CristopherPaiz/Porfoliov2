@@ -21,10 +21,7 @@ const Navibar = () => {
         <NavbarContent>
           <NavbarBrand>
             <p>
-              <RouterLink
-                to={"/"}
-                className={`font-black text-left text-4xl  ${theme === "dark" ? "claro" : "oscuro"}`}
-              >
+              <RouterLink to={"/"} className={`font-black text-left text-4xl `}>
                 CRP
               </RouterLink>
             </p>
@@ -68,36 +65,21 @@ const Navibar = () => {
           )}
           <NavbarItem isActive>
             <Button className="bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-900">
-              <RouterLink
-                to={"/"}
-                className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold ${
-                  theme === "dark" ? "claro" : "oscuro"
-                }`}
-              >
+              <RouterLink to={"/"} className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold`}>
                 Inicio
               </RouterLink>
             </Button>
           </NavbarItem>
           <NavbarItem>
             <Button className="bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-900" variant="flat">
-              <RouterLink
-                to={"/about"}
-                className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold ${
-                  theme === "dark" ? "claro" : "oscuro"
-                }`}
-              >
+              <RouterLink to={"/about"} className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold`}>
                 ¿Quién soy?
               </RouterLink>
             </Button>
           </NavbarItem>
           <NavbarItem>
             <Button className="bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-900">
-              <RouterLink
-                to={"/contact"}
-                className={`text-base py-2 -mx-3 px-3 flex gap-1 font-bold ${
-                  theme === "dark" ? "claro" : "oscuro"
-                }`}
-              >
+              <RouterLink to={"/contact"} className={`text-base py-2 -mx-3 px-3 flex gap-1 font-bold`}>
                 Contacto
               </RouterLink>
             </Button>
@@ -113,35 +95,22 @@ const Navibar = () => {
               stroke="currentColor"
               className="w-6 h-6"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </DropdownTrigger>
           <DropdownMenu aria-label="Menu Actions" variant="flat" className="font-bold">
             <DropdownItem key="comunidad">
-              <Link
-                to={"/"}
-                className={`pr-28 pl-3 flex gap-2 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
-              >
+              <Link to={"/"} className={`pr-28 pl-3 flex gap-2 font-bold`}>
                 Inicio
               </Link>
             </DropdownItem>
             <DropdownItem key="farmacia">
-              <Link
-                to={"/about"}
-                className={`pr-28 pl-3 flex gap-2 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
-              >
+              <Link to={"/about"} className={`pr-28 pl-3 flex gap-2 font-bold`}>
                 ¿Quién soy?
               </Link>
             </DropdownItem>
             <DropdownItem key="social">
-              <Link
-                to={"/contact"}
-                className={`pr-28 pl-3 flex gap-2 font-bold ${theme === "dark" ? "claro" : "oscuro"}`}
-              >
+              <Link to={"/contact"} className={`pr-28 pl-3 flex gap-2 font-bold`}>
                 Contacto
               </Link>
             </DropdownItem>
@@ -187,7 +156,7 @@ const Navibar = () => {
           </DropdownMenu>
         </Dropdown>
       </Navbar>
-      <div className={`fixed ${theme === "dark" ? "lineClaro" : "lineOscuro"}`}></div>
+      <div className={`fixed`}></div>
     </>
   );
 };
