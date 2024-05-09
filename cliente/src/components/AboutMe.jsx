@@ -27,19 +27,18 @@ const AboutMe = () => {
               theme === "dark" ? "claro" : "oscuro"
             }`}
           >
-            Llámame Cristopher o <i>Choper</i>, como te sientas en confianza, soy de Quetzaltenango, Guatemala.
-            Desarrollador con una pasión por la tecnología y el aprendizaje constante. Mi objetivo es utilizar mis
-            habilidades técnicas para resolver problemas y ayudar a las personas a alcanzar sus metas.
+            Soy un desarrollador con una pasión por la tecnología y el aprendizaje constante. Mi objetivo es utilizar
+            mis habilidades técnicas para resolver problemas y ayudar a las personas a alcanzar sus metas.
             <br />
             <br />
             Estoy siempre buscando nuevas oportunidades para aprender y crecer en mi carrera, en mi tiempo libre,
             disfruto participar en proyectos personales y colaborar en proyectos de código abierto. Estoy emocionado de
-            aplicar mis habiidades y conocimientos para contribuir al éxito de ti o de quien necesite de mi apoyo.
+            aplicar mis habilidades y conocimientos para contribuir al éxito de quien necesite mi apoyo.
           </h3>
           <div className="w-full text-center mt-5">
             <Button color="warning" variant="ghost" className="sm:-ml-10 sm:w-[250px]">
               <a href={CV} className="fontbutton" target="_blank" rel="noreferrer">
-                &darr;&nbsp;|&nbsp;DESCARGAR CV
+                &darr;&nbsp;&nbsp;|&nbsp;&nbsp;DESCARGAR CV
               </a>
             </Button>
           </div>
