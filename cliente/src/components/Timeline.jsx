@@ -80,7 +80,15 @@ const Timeline = () => {
     const meses = Math.floor((diferenciaEnMilisegundos % milisegundosPorAño) / milisegundosPorMes);
     const dias = Math.floor((diferenciaEnMilisegundos % milisegundosPorMes) / milisegundosPorDia);
 
-    return `Antigüedad: ${años} años, ${meses} meses, ${dias} días.`;
+    if (años > 0) {
+      return `Antigüedad: ${años} años, ${meses} meses, ${dias} días.`;
+    }
+    if (meses > 0) {
+      return `Antigüedad: ${meses} meses, ${dias} días.`;
+    }
+    if (dias > 0) {
+      return `Antigüedad: ${dias} días.`;
+    }
   };
 
   return (
