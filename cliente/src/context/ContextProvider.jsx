@@ -10,21 +10,21 @@ const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     // Intenta recuperar el tema del localStorage
-    const storedTheme = localStorage.getItem("themeSFA");
+    const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
       setTheme(storedTheme);
     } else {
       setTheme("light");
     }
-  }, []);
+  }, [setTheme]);
 
   const changeTheme = (valor) => {
     if (valor === "dark") {
       setTheme("light");
-      localStorage.setItem("themeSFA", "light");
+      localStorage.setItem("theme", "light");
     } else {
       setTheme("dark");
-      localStorage.setItem("themeSFA", "dark");
+      localStorage.setItem("theme", "dark");
     }
   };
 

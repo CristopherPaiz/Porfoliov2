@@ -1,6 +1,4 @@
-import { useContext } from "react";
 import { Button } from "@nextui-org/react";
-import { contexto } from "../context/ContextProvider.jsx";
 import Pokedex from "/pokedex.webp";
 import Clima from "/clima.webp";
 import Comunidad from "/comunidad.webp";
@@ -12,8 +10,6 @@ import paycut from "/paycut.webp";
 import lz77 from "/lz77.webp";
 
 const Projects = () => {
-  const { theme } = useContext(contexto);
-
   const colores = {
     react: "rgba(88, 231, 253, 0.9)",
     html: "rgb(255, 99, 51)",
@@ -188,20 +184,12 @@ const Projects = () => {
 
   return (
     <div className="sm:mx-32 mb-32">
-      <h1
-        className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 font-black sm:mt-24 ${
-          theme === "dark" ? "claro" : "oscuro"
-        }`}
-      >
-        Proyectos
-      </h1>
+      <h1 className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 font-black sm:mt-24`}>Proyectos</h1>
       <div className="relative flex flex-row flex-wrap sm:gap-x-2 gap-y-10 mx-6 mt-6 justify-evenly">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`relative sm:w-5/12 rounded-2xl sm:rounded-3xl ${
-              theme === "dark" ? "divoscuroBorder" : "divclaroBorder"
-            } dark:bg-opacity-50 px-5 pt-7 pb-5 w-11/12 drop-shadow-lg dark:drop-shadow-[0_6px_5px_rgba(255,255,255,0.25)] border-[1px] border-black/10 dark:border-white/30`}
+            className={`relative sm:w-5/12 rounded-2xl sm:rounded-3xl bg-black/5 dark:bg-white/10 dark:bg-opacity-50 px-5 pt-7 pb-5 w-11/12 drop-shadow-lg dark:drop-shadow-[0_6px_5px_rgba(255,255,255,0.25)] border-[1px] border-black/20 dark:border-white/30`}
           >
             <img src={project.img} className="object-cover rounded-lg sm:rounded-lg drop-shadow-lg border-[1px]" />
             <div className="flex flex-col gap-2 sm:mb-3">
