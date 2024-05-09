@@ -12,20 +12,20 @@
   --color-bg-oscuroTer: rgb(39, 40, 0, 0.1); /* div tertiary */
 
   --color-text-claro: rgba(247, 255, 128, 1); /* text claro primary */
-  --color-text-claroSec: rgba(111, 126, 255, 1); /* text claro secondary */
-  --color-text-claroTer: rgba(0, 0, 0, 1); /* text claro tertiary*/
+  --color-text-claroSec: rgb(152, 195, 255); /* text claro secondary */
+  --color-text-claroTer: rgb(152, 195, 255); /* text claro tertiary*/
 
-  --color-text-oscuro: rgb(202, 202, 0); /* text oscuro primary */
-  --color-text-oscuroSec: rgb(134, 154, 255); /* text oscuro secondary */
-  --color-text-oscuroTer: rgb(204, 205, 255); /* text oscuro tertiary*/
+  --color-text-oscuro: rgb(233, 233, 0); /* text oscuro primary */
+  --color-text-oscuroSec: rgb(76, 106, 255); /* text oscuro secondary */
+  --color-text-oscuroTer: rgb(76, 106, 255); /* text oscuro tertiary*/
 
-  --color-bord-oscuro: rgb(75, 75, 0); /* text oscuro primary */
-  --color-bord-oscuroSec: rgb(0, 21, 57); /* text oscuro secondary */
-  --color-bord-oscuroTer: rgb(0, 20, 47); /* text oscuro tertiary*/
+  --color-bord-oscuro: rgb(70, 70, 6); /* text oscuro primary */
+  --color-bord-oscuroSec: rgb(0, 30, 80); /* text oscuro secondary */
+  --color-bord-oscuroTer: rgb(0, 0, 0); /* text oscuro tertiary*/
 
-  --color-bord-claro: rgb(255, 255, 133); /* text claro primary */
-  --color-bord-claroSec: rgb(169, 201, 255); /* text claro secondary */
-  --color-bord-claroTer: rgb(152, 197, 255); /* text oscuro tertiary*/
+  --color-bord-claro: rgb(255, 255, 225); /* text claro primary */
+  --color-bord-claroSec: rgb(255, 255, 255); /* text claro secondary */
+  --color-bord-claroTer: rgb(220, 240, 255); /* text oscuro tertiary*/
 
   --color-line: #f4d03f; /* linea */
   --color-lineOscuro: #000000; /* linea oscuro*/
@@ -101,8 +101,8 @@
   padding-bottom: 7px;
   background-image: linear-gradient(
     180deg,
-    var(--color-text-oscuro) 15%,
-    var(--color-text-oscuroSec) 80%,
+    var(--color-text-oscuro) 5%,
+    var(--color-text-oscuroSec) 60%,
     var(--color-text-oscuroTer) 100%
   );
   background-size: cover;
