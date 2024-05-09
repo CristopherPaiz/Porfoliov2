@@ -33,6 +33,8 @@ const Projects = () => {
   const projects = [
     {
       name: "Pokédex CRP",
+      description:
+        "Pokédex con todos los pokémones, con la posibilidad de buscar por nombre o número y ver sus detalles específicos.",
       tech: [
         { nombre: "React JS", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -45,7 +47,9 @@ const Projects = () => {
       showrepo: true,
     },
     {
-      name: "Music Player",
+      name: "Reproductor de música",
+      description:
+        "Un reproductor de música que permite reproducir canciones de forma muy rápida gracias a algoritmos de segmentación, funcionando en conexiones de red lentas.",
       tech: [
         { nombre: "React JS", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -59,6 +63,8 @@ const Projects = () => {
     },
     {
       name: "Biblian - Comparador de versículos",
+      description:
+        "Una aplicación donde se muestran más de 100 versiones de biblias, con la posibilidad de comparar versículos entre ellas.",
       tech: [
         { nombre: "React JS", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -72,6 +78,8 @@ const Projects = () => {
     },
     {
       name: "Sistema de control - Comunidad San Francisco de Asís",
+      description:
+        "Aplicación completa para la gestión de una comunidad religiosa, con control de usuarios, roles y permisos, como parte de proyecto de graduación de la Universidad Mariano Gálvez de Guatemala.",
       tech: [
         { nombre: "React JS", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -88,6 +96,7 @@ const Projects = () => {
     },
     {
       name: "Paycut - Credit Card Pay & Cut Calendar",
+      description: "Aplicación que te permite ver visualmente los rangos de pago y corte de tus tarjetas de crédito.",
       tech: [
         { nombre: "HTML", color: colores.html },
         { nombre: "CSS", color: colores.css },
@@ -99,7 +108,9 @@ const Projects = () => {
       showrepo: true,
     },
     {
-      name: "Scheduler App",
+      name: "Scheduler App (Para Intecap)",
+      description:
+        "Aplicación que te permite asignar horarios a los docentes de INTECAP para sus clases y actividades, evitando colisiones entre horarios, fechas, docentes y aulas.",
       tech: [
         { nombre: "React JS", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -115,7 +126,8 @@ const Projects = () => {
       showrepo: false,
     },
     {
-      name: "Background HTML & React",
+      name: "Backgrounds HTML & React",
+      description: "Simple aplicación que te permite copiar y pegar fondos personalizados para tu proyecto web.",
       tech: [
         { nombre: "React", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -129,6 +141,8 @@ const Projects = () => {
     },
     {
       name: "LZ77 - Text Compression",
+      description:
+        "Algoritmo de compresión de texto LZ77, que permite comprimir y descomprimir texto de forma eficiente, sin pérdida de información.",
       tech: [
         { nombre: "HTML", color: colores.html },
         { nombre: "CSS", color: colores.css },
@@ -141,6 +155,8 @@ const Projects = () => {
     },
     {
       name: "Weather App",
+      description:
+        "Aplicación que te permite ver el clima de cualquier ciudad del mundo, utilizando la API de OpenWeather.",
       tech: [
         { nombre: "React JS", color: colores.react },
         { nombre: "HTML", color: colores.html },
@@ -173,9 +189,10 @@ const Projects = () => {
           >
             <img src={project.img} className="object-cover rounded-lg sm:rounded-lg drop-shadow-lg border-[1px]" />
             <div className="flex flex-col gap-2 sm:mb-3">
-              <h2 className="text-xl sm:text-2xl font-bold text-center my-3 text-black dark:text-white">
+              <h2 className="text-2xl sm:text-2xl font-bold text-center mt-3 text-black dark:text-white">
                 {project.name}
               </h2>
+              <h3 className="text-[12px] sm:text-[14px] text-center mb-4 opacity-50">{project?.description}</h3>
               <div className="text-center sm:text-lg flex flex-wrap flex-row w-full gap-y-2 gap-x-1 justify-center">
                 {project.tech.map((techs, index) => (
                   <div
