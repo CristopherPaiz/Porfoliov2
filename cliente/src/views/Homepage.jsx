@@ -1,4 +1,5 @@
 import AboutMe from "../components/AboutMe.jsx";
+import Footer from "../components/Footer.jsx";
 import Projects from "../components/Projects.jsx";
 import Skills from "../components/Skills.jsx";
 import Timeline from "../components/Timeline.jsx";
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 };
