@@ -195,13 +195,13 @@ const Projects = () => {
       >
         Proyectos
       </h1>
-      <div className="relative flex flex-row flex-wrap sm:gap-x-2 gap-y-6 mx-6 mt-6 justify-evenly">
+      <div className="relative flex flex-row flex-wrap sm:gap-x-2 gap-y-10 mx-6 mt-6 justify-evenly">
         {projects.map((project, index) => (
           <div
             key={index}
             className={`relative sm:w-5/12 rounded-2xl sm:rounded-3xl ${
               theme === "dark" ? "divoscuroBorder" : "divclaroBorder"
-            } dark:bg-opacity-50 px-5 pt-7 pb-5 w-11/12 drop-shadow-lg border-[1px] border-black/10 dark:border-white/30`}
+            } dark:bg-opacity-50 px-5 pt-7 pb-5 w-11/12 drop-shadow-lg dark:drop-shadow-[0_6px_5px_rgba(255,255,255,0.25)] border-[1px] border-black/10 dark:border-white/30`}
           >
             <img src={project.img} className="object-cover rounded-lg sm:rounded-lg drop-shadow-lg border-[1px]" />
             <div className="flex flex-col gap-2 sm:mb-3">
@@ -213,7 +213,9 @@ const Projects = () => {
                 {project.tech.map((techs, index) => (
                   <div
                     key={index}
-                    className={"w-[110px] px-2 py-1 text-[12px] sm:text-[14px] rounded-full"}
+                    className={
+                      "w-[110px] px-2 py-1 text-[12px] sm:text-[14px] rounded-full border-[1px] border-black/30 dark:border-white/30 drop-shadow-md dark:drop-shadow-[0_4px_3px_rgba(255,255,255,0.25)]"
+                    }
                     style={{ backgroundColor: techs.color, color: techs.textColor }}
                   >
                     {techs.nombre}
