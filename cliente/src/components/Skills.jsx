@@ -162,7 +162,7 @@ const Skills = () => {
             <p className={`text-center font-black text-lg sm:text-xl`} style={{ color: tecnologia.color }}>
               {tecnologia.nombre}
             </p>
-            <p className={`text-center font-thin text-lg sm:text-xl ${theme === "dark" ? "claro" : "oscuro"}`}>
+            <p style={{ color: tecnologia.color }} className={`text-center font-thin text-lg sm:text-xl`}>
               {tecnologia.stars}
             </p>
           </div>
