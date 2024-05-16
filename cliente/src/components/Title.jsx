@@ -23,7 +23,7 @@ const Title = () => {
       if (isMobile) {
         setTimeout(() => {
           setShouldEnlarge(true);
-        }, 2500);
+        }, 2000);
       }
     };
   }, [isMobile]);
