@@ -1,26 +1,31 @@
 import { useContext, useEffect, useState } from "react";
 import { contexto } from "../context/ContextProvider.jsx";
-import GifPlayer from "react-gif-player";
 import LOGO from "/CAPLTITLE1TIMES.gif";
 
 const Title = () => {
   const { theme } = useContext(contexto);
-  const [isMobile, setIsMobile] = useState(false);
   const [shouldEnlarge, setShouldEnlarge] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    setIsMobile(screenWidth <= 768); // Establecer como móvil si el ancho de la pantalla es menor o igual a 768 píxeles
+    setIsMobile(screenWidth <= 768);
   }, []);
 
   useEffect(() => {
-    let timeout;
-    if (isMobile) {
-      timeout = setTimeout(() => {
-        setShouldEnlarge(true);
-      }, 2500); // Aumentar tamaño después de 2.5 segundos
-    }
-    return () => clearTimeout(timeout);
+    const gif = new Image();
+    gif.src = LOGO;
+    gif.onload = () => {
+      setIsLoaded(true);
+
+      // Iniciar la cuenta de tiempo para el agrandamiento después de 2.5 segundos de reproducción
+      if (isMobile) {
+        setTimeout(() => {
+          setShouldEnlarge(true);
+        }, 2500);
+      }
+    };
   }, [isMobile]);
 
   return (
@@ -34,12 +39,7 @@ const Title = () => {
           pointerEvents: "none",
         }}
       >
-        <GifPlayer
-          gif={LOGO}
-          autoplay={true}
-          loop={false}
-          style={{ pointerEvents: "none" }} // Hacer que el GIF no sea clickeable
-        />
+        {isLoaded && <img src={LOGO} alt="GIF" />}
       </div>
       <div className="absolute inset-0" style={{ pointerEvents: "none", zIndex: 1 }}></div>
       <h2 className={`z-10 mt-4 sm:-mt-32 text-2xl sm:text-5xl ${theme === "dark" ? "claro" : "oscuro"}`}>
