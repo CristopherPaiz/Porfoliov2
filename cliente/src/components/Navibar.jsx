@@ -17,17 +17,17 @@ const Navibar = () => {
   const { changeTheme, theme } = useContext(contexto);
   return (
     <>
-      <Navbar maxWidth="full">
+      <Navbar maxWidth="full" className="text-[#c8d10f] dark:text-yellow-300">
         <NavbarContent>
           <NavbarBrand>
             <p>
               <RouterLink to={"/"} className={`font-black text-left text-4xl `}>
-                CRP
+                CAP
               </RouterLink>
             </p>
           </NavbarBrand>
         </NavbarContent>
-        <NavbarContent className="hidden sm:flex gap-1 md:ml-6 " justify="end">
+        <NavbarContent className="hidden sm:flex gap-1 md:ml-6  " justify="end">
           {theme === "dark" ? (
             <Button onClick={() => changeTheme(theme)} variant="light" isIconOnly className="m-2">
               <svg
@@ -65,27 +65,36 @@ const Navibar = () => {
           )}
           <NavbarItem isActive>
             <Button className="bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-900">
-              <RouterLink to={"/"} className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold`}>
+              <RouterLink
+                to={"/"}
+                className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold text-[#8c921f] dark:text-yellow-300`}
+              >
                 Inicio
               </RouterLink>
             </Button>
           </NavbarItem>
           <NavbarItem>
             <Button className="bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-900" variant="flat">
-              <RouterLink to={"/about"} className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold`}>
+              <RouterLink
+                to={"/about"}
+                className={`text-base  py-2 -mx-3 px-3 flex gap-1 font-bold text-[#8c921f] dark:text-yellow-300`}
+              >
                 ¿Quién soy?
               </RouterLink>
             </Button>
           </NavbarItem>
           <NavbarItem>
             <Button className="bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-900">
-              <RouterLink to={"/contact"} className={`text-base py-2 -mx-3 px-3 flex gap-1 font-bold`}>
+              <RouterLink
+                to={"/contact"}
+                className={`text-base py-2 -mx-3 px-3 flex gap-1 font-bold text-[#8c921f] dark:text-yellow-300`}
+              >
                 Contacto
               </RouterLink>
             </Button>
           </NavbarItem>
         </NavbarContent>
-        <Dropdown placement="bottom-end" className="sm:hidden">
+        <Dropdown placement="bottom-end" className="sm:hidden text-[#8c921f] dark:text-yellow-300">
           <DropdownTrigger className="sm:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,23 +109,27 @@ const Navibar = () => {
           </DropdownTrigger>
           <DropdownMenu aria-label="Menu Actions" variant="flat" className="font-bold">
             <DropdownItem key="comunidad">
-              <Link to={"/"} className={`pr-28 pl-3 flex gap-2 font-bold`}>
+              <Link to={"/"} className={`pr-28 pl-3 flex gap-2 font-bold text-[#c8d10f] dark:text-yellow-300`}>
                 Inicio
               </Link>
             </DropdownItem>
             <DropdownItem key="farmacia">
-              <Link to={"/about"} className={`pr-28 pl-3 flex gap-2 font-bold`}>
+              <Link to={"/about"} className={`pr-28 pl-3 flex gap-2 font-bold text-[#c8d10f] dark:text-yellow-300`}>
                 ¿Quién soy?
               </Link>
             </DropdownItem>
             <DropdownItem key="social">
-              <Link to={"/contact"} className={`pr-28 pl-3 flex gap-2 font-bold`}>
+              <Link to={"/contact"} className={`pr-28 pl-3 flex gap-2 font-bold text-[#c8d10f] dark:text-yellow-300`}>
                 Contacto
               </Link>
             </DropdownItem>
-            <DropdownItem key="dark" className="text-primary">
+            <DropdownItem key="dark" className="text-[#c8d10f] dark:text-yellow-300">
               {theme === "dark" ? (
-                <Button onClick={() => changeTheme(theme)} variant="light">
+                <Button
+                  onClick={() => changeTheme(theme)}
+                  variant="light"
+                  className="text-[#c8d10f] dark:text-yellow-300"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -134,7 +147,11 @@ const Navibar = () => {
                   Modo Claro
                 </Button>
               ) : (
-                <Button onClick={() => changeTheme(theme)} variant="light">
+                <Button
+                  onClick={() => changeTheme(theme)}
+                  variant="light"
+                  className="text-[#8c921f] dark:text-yellow-300"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -156,7 +173,7 @@ const Navibar = () => {
           </DropdownMenu>
         </Dropdown>
       </Navbar>
-      <div className={`fixed`}></div>
+      <div className={`fixed lineNav`}></div>
     </>
   );
 };

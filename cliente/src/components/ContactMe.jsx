@@ -17,7 +17,7 @@ const ContactMe = () => {
       >
         Contáctame
       </h1>
-      <div className={`flex flex-col w-[85%] sm:w-[700px] m-auto bg-black/20 dark:bg-white/10 py-20 rounded-3xl`}>
+      <div className={`flex flex-col w-[85%] sm:w-[700px] m-auto bg-black/10 dark:bg-white/10 py-20 rounded-3xl`}>
         <form name="contact" method="post" data-netlify="true" className={`flex flex-col gap-5 px-8 w-full`}>
           <input type="hidden" name="form-name" value="contact" />
           <label className="flex flex-col mb-2">

@@ -11,13 +11,13 @@
   --color-bg-oscuroSec: rgb(39, 40, 0, 0.1); /* div oscuro */
   --color-bg-oscuroTer: rgb(39, 40, 0, 0.1); /* div tertiary */
 
-  --color-text-claro: rgba(247, 255, 128, 1); /* text claro primary */
-  --color-text-claroSec: rgb(152, 195, 255); /* text claro secondary */
-  --color-text-claroTer: rgb(152, 195, 255); /* text claro tertiary*/
+  --color-text-claro: rgb(238, 255, 0); /* text claro primary */
+  --color-text-claroSec: rgba(247, 255, 128, 1); /* text claro secondary */
+  --color-text-claroTer: rgb(63, 143, 255); /* text claro tertiary*/
 
   --color-text-oscuro: rgb(233, 233, 0); /* text oscuro primary */
-  --color-text-oscuroSec: rgb(76, 106, 255); /* text oscuro secondary */
-  --color-text-oscuroTer: rgb(76, 106, 255); /* text oscuro tertiary*/
+  --color-text-oscuroSec: rgb(145, 145, 0); /* text oscuro secondary */
+  --color-text-oscuroTer: rgb(0, 42, 255); /* text oscuro tertiary*/
 
   --color-bord-oscuro: rgb(70, 70, 6); /* text oscuro primary */
   --color-bord-oscuroSec: rgb(0, 30, 80); /* text oscuro secondary */
@@ -83,7 +83,7 @@
   background-image: linear-gradient(
     180deg,
     var(--color-text-claro) 15%,
-    var(--color-text-claroSec) 80%,
+    var(--color-text-claroSec) 40%,
     var(--color-text-claroTer) 100%
   );
   background-size: cover;
@@ -102,7 +102,7 @@
   background-image: linear-gradient(
     180deg,
     var(--color-text-oscuro) 5%,
-    var(--color-text-oscuroSec) 60%,
+    var(--color-text-oscuroSec) 40%,
     var(--color-text-oscuroTer) 100%
   );
   background-size: cover;
@@ -158,4 +158,110 @@
 ::selection {
   color: var(--color-selection-text);
   background: var(--color-selection-bg);
+}
+
+/* BOTON DESCARGAR CV */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(189, 189, 0);
+  box-shadow: 0 0 0 2px yellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: yellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+  rotate: 90deg;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+  rotate: 90deg;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px yellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
+.lineNav {
+  background: linear-gradient(90deg, rgba(25, 25, 25, 0) 5%, rgba(244, 208, 63, 1) 50%, rgba(25, 25, 25, 0) 95%);
+  width: 100vw;
+  height: 2px;
+  filter: drop-shadow(0 5px 5px #ffd323);
 }
