@@ -246,11 +246,11 @@ const Projects = () => {
                 style={{ zIndex: -10, width: "100%", height: "100%", top: 0, left: 0 }}
               />
               <div
-                className="flex flex-col gap-2 sm:mb-3 py-3 px-10 "
+                className="flex flex-col gap-2 sm:mb-3 pt-3 px-10 "
                 style={{ color: project.color, textShadow: `2px 2px 8px ${project.shadow}` }}
               >
                 <h2 className="text-2xl sm:text-2xl font-bold text-center mt-1 mb-3">{project.name}</h2>
-                <div className="flex flex-col -mt-3 justify-center items-center" style={{ height: "65px" }}>
+                <div className="flex flex-col -mt-5 justify-center items-center" style={{ height: "65px" }}>
                   <h3 className="text-[12px] sm:text-[14px] text-center overflow-hidden line-clamp-3">
                     {project?.description}
                   </h3>
