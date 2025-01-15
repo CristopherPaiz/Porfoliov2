@@ -143,9 +143,7 @@ const Skills = () => {
     <div className="flex justify-center">
       <div className="sm:mx-32 mb-32 max-w-[1200px] w-full">
         <h1
-          className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-6xl font-black sm:mt-24 mb-14 ${
-            theme === "dark" ? "claro" : "oscuro"
-          }`}
+          className={`text-5xl text-center mt-24 sm:text-left sm:mx-5 sm:text-6xl font-black sm:mt-24 mb-14 ${theme === "dark" ? "claro" : "oscuro"}`}
         >
           Habilidades
         </h1>
@@ -153,18 +151,18 @@ const Skills = () => {
           {tecnologias.map((tecnologia, index) => (
             <div
               key={index}
-              className="flex flex-col items-center py-4 px-1 sm:w-44 w-5/12 rounded-xl shadow-xl cursor-default border-2 dark:hover:shadow-[#6e6e6e] dark:hover:shadow-lg hover:shadow-xl hover:shadow-[#acacac] duration-100 ease-linear"
+              className="flex flex-col items-center py-2 px-1 sm:w-34 w-3/12 rounded-xl shadow-xl cursor-default border-2 dark:hover:shadow-[#6e6e6e] dark:hover:shadow-lg hover:shadow-xl hover:shadow-[#acacac] duration-100 ease-linear"
               style={{
                 borderColor: theme === "dark" ? tecnologia.color + "20" : tecnologia.color + "30",
                 backgroundColor: theme === "dark" ? tecnologia.color + "50" : tecnologia.color + "20",
               }}
             >
-              <img src={tecnologia.imgurl} alt={tecnologia.nombre} className="w-20 h-20 sm:w-24 sm:h-24" />
-              <p className={`text-center font-black text-lg sm:text-xl`} style={{ color: tecnologia.color }}>
+              <img src={tecnologia.imgurl} alt={tecnologia.nombre} className="w-14 h-14 sm:w-20 sm:h-20" />
+              <p className={`text-center mt-1 font-black text-sm sm:text-lg`} style={{ color: tecnologia.color }}>
                 {tecnologia.nombre}
               </p>
               <p style={{ color: tecnologia.color }} className={`text-center font-thin text-lg sm:text-xl`}>
-                {tecnologia.stars}
+                {tecnologia.stars}  
               </p>
             </div>
           ))}

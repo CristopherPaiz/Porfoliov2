@@ -29,7 +29,7 @@ const Title = () => {
   }, [isMobile]);
 
   return (
-    <div className="h-screen -mt-16 grid place-content-center place-items-center relative">
+    <div className="h-screen -mt-16 grid place-content-center place-items-center relative overflow-hidden">
       <div
         className="px-2 -z-10"
         style={{
@@ -42,9 +42,7 @@ const Title = () => {
         {isLoaded && <img src={LOGO} alt="GIF" />}
       </div>
       <div className="absolute inset-0" style={{ pointerEvents: "none", zIndex: 1 }}></div>
-      <h2 className={`z-10 mt-4 sm:-mt-32 text-2xl sm:text-5xl ${theme === "dark" ? "claro" : "oscuro"}`}>
-        Desarrollador
-      </h2>
+      <h2 className={`z-10 mt-4 sm:-mt-32 text-2xl sm:text-5xl font-bold ${theme === "dark" ? "claro" : "oscuro"}`}>Desarrollador</h2>
     </div>
   );
 };
